@@ -1,4 +1,4 @@
 # FP DIP330
-Functional Programming tasks \
+First Functional Programming task \
 Done by Dmitrijs Litvins \
 161RDB206

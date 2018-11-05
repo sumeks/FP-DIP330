@@ -7,8 +7,8 @@ object WordCount{
         input
             .toLowerCase()
             .replace(Regex("[^\\w']"), " ")
-            .replace(Regex(" '"), " ")
-            .replace(Regex("' "), " ")
+            .replace(" '", " ")
+            .replace("' ", " ")
             .trim()
             .split(Regex("\\s+"))
             .groupBy{it}

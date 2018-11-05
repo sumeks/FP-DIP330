@@ -8,7 +8,7 @@ class IsbnVerifier{
         input
             .replace(Regex("-"), "")
             .reversed()
-            .map{ x -> if(x == 'X') 10 else x.toString().toInt() }
+            .map{ x -> if(x == 'X' || x == 'x') 10 else x.toString().toInt() }
             .mapIndexed { index, value -> value * (index+1) }
             .sum() % 11 == 0
 

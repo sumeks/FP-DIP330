@@ -1,0 +1,8 @@
+;27 problem : Palindrome Detector
+
+#(= (seq %) (reverse %))
+
+;38 problem : Maximum value
+
+#(first (sort > %&))
+;#(last (sort %&))
